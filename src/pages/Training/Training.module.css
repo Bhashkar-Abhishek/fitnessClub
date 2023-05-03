@@ -1,0 +1,70 @@
+
+.main{
+    margin : 0 ;
+    padding : 0 ;
+    box-Sizing : border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1{
+    text-align : center;
+    color : red;
+}
+
+h2{
+    text-align: center;
+}
+
+.p{
+    text-align : center;
+}
+
+ p{
+    font-weight: 600;
+}
+
+span{
+    font-size : 1.3rem;
+}
+
+.cardbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    display: flex;
+    flex-direction : column ;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    padding: 1rem;
+    margin-left: .8rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,0.2);
+    text-align: center;
+    margin-top: 1rem;
+    background-color:rgba(255, 255, 255, 0.8);
+    
+}
+
+img{
+    height : 25rem;
+    width : 30rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+    display: block;
+    margin: 1rem auto;
+    box-shadow: none;
+    background-color: transparent;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
