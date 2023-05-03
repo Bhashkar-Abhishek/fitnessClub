@@ -2,7 +2,7 @@ import { useState } from "react";
 import style from "./Training.module.css";
 import Button from "@mui/material/Button";
 
-export function Training() {
+export default function Training() {
   const [show, setShow] = useState(3);
   const [buttonText, setButtonText] = useState("Show More");
 
