@@ -19,7 +19,7 @@ export default function AboutUs() {
         </div>
         <div className={Styles.ContainerHeading}>
           <h1>About Us</h1>
-          <p>
+          <h3>
             Through our 7-day programme we offer you some useful life questions
             to think about. We also offer you some answers on these questions
             but we encourage you to learn more about it yourself. You can read
@@ -27,7 +27,7 @@ export default function AboutUs() {
             for the next 7 days. It may become the most valuable week of your
             life! It can be very valuable in your life. So take some time and
             invest one week in your life and future!
-          </p>
+          </h3>
           <button className={Styles.button}>Learn More</button>
         </div>
       </div>
@@ -40,21 +40,21 @@ export default function AboutUs() {
               <strong className={Styles.strong}>
                 Consultation with expert
               </strong>
-              <p>
+              <h4>
                 Plus Fitness franchisee Jacob Awad first started his journey
                 with the brand in 2013 after purchasing Plus Fitness Seven Hills
                 from a previous owner. In 2017 Jacob then went on to purchase
                 his second location, Plus Fitness Northmead.
-              </p>
+              </h4>
             </li>
             <li>
               <strong className={Styles.strong}> workout faculitis</strong>
-              <p>
+              <h4>
                 Plus Fitness franchisee Jacob Awad first started his journey
                 with the brand in 2013 after purchasing Plus Fitness Seven Hills
                 from a previous owner. In 2017 Jacob then went on to purchase
                 his second location, Plus Fitness Northmead.
-              </p>
+              </h4>
             </li>
           </ul>
         </div>
