@@ -1,7 +1,7 @@
-// import { Video1 } from "./video";
-// import { Video2 } from "./video";
+
 import ReactPlayer from "react-player";
 import styles from "./AboutUs.module.css";
+
 
 function AboutUs() {
   return (
@@ -27,6 +27,8 @@ function AboutUs() {
           controls
           width="100%"
           height="100%"
+          volume={5}
+          // controls={false}
         />
       </div>
       <div className={styles.videoContainer}>
@@ -35,9 +37,12 @@ function AboutUs() {
           controls
           width="100%"
           height="100%"
+          // controls="true"
+          volume={5}
         />
       </div>
     </div>
   );
 }
 export default AboutUs;
+// // import React from "react";
