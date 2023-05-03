@@ -77,8 +77,8 @@ export function Training() {
 
   return (
     <div className = {style.main}>
-    <h1> Trainers </h1>
-      <h2>Meet our team </h2>
+    <h1 className={style.h1}> Trainers </h1>
+      <h2 className = {style.h2}>Meet our team </h2>
 
       <p className={style.p}>
         We are the team experience people, nutirition, sports and fitness
@@ -86,7 +86,8 @@ export function Training() {
         and knowledge unsurpassed in the industry.Get to know us.
       </p>
 
-      {data.slice(0, show).map((item) => {
+     {/* <div className={style.cards}> */}
+     {data.slice(0, show).map((item) => {
         return (
           <div key={item.id}  className={style.cardbox}>
             <div  className={style.card} >
@@ -99,6 +100,7 @@ export function Training() {
           </div>
         );
       })}
+     {/* </div> */}
       <br />
 
       <div
