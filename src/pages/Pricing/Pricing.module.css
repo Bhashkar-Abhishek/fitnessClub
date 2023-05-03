@@ -1,0 +1,180 @@
+.pricing_mainBackground{
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+   
+    ;
+}
+
+.pricing_container{
+    width: 90%;
+    height: 80%;
+
+
+    display: flex;
+    justify-content: center;
+}
+
+.pricing_container > div{
+    width: 90%;
+}
+
+.pass_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5rem;
+}
+.pass_box{
+    width: 90%;
+    height: 80%;
+    border: 2px solid green;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.pass_box:hover{
+    height: 100%;
+}
+.pass_box > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pass_box > div p{
+    margin-bottom: 1px;
+    font-weight: 700;
+}
+.pass_box > div h1{
+    font-weight: 400;
+    font-size: 42px;
+    color: green;
+}
+.pass_box > div span{
+    font-style: italic ;
+    font-size: 14px;
+}
+.pass_box > p{
+    margin: 5px 0;
+    
+}
+
+  
+
+.left_box{
+    
+    background-color: rgb(24, 24, 24);
+    height: 90%;
+   
+}
+.left_box > div span{
+    color: white;
+}
+.left_box p{
+    color: white;
+}
+
+.right_box{
+    height: 100%;
+    background-color: white;
+    margin-left:5rem ;
+}
+.btnn{
+    background-color: green;
+    color: red;
+    width: 100px;
+    height: 50px;
+}
+.btn{
+   
+    background-color: white;
+    color: red;
+    padding: 20px;
+   
+    
+    
+}
+
+
+.content_part{
+    margin-bottom: 20px;
+    margin-left: 5rem;
+}
+.content_part h4{
+    color: gray;
+    font-weight: 500;
+}
+.content_part > h4 span{
+    border-bottom: 2px solid green;
+}
+.content_part h2,
+.content_part h3{
+    margin: 20px 0;
+    font-weight: 500;
+    color: white;
+}
+.content_part p{
+    color: gray;
+}
+.content_part > ul > li{
+    list-style: none;
+    margin: 5px 0;
+    color: gray;
+}
+.content_part > ul span{
+    color: green;
+    font-size: 16px;
+}
+@media (max-width: 1200px) {
+    .pricing_container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+    
+    .pass_part {
+      flex-direction: column;
+      margin: 0;
+      
+    }
+    .btn, .btnn {
+        width: auto;
+        max-width: 100%;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+    
+    .pass_box {
+      width: 50%;
+      height: 50%;
+      margin: 50px 0;
+    }
+    
+    .right_box {
+      margin-left: 0;
+    }
+    
+    .content_part {
+      margin: 20px 0;
+      margin-left: 0;
+    }
+    .btn {
+     
+        width: 5%;
+       
+      }
+      .btnn {
+        
+        width: 5%;
+        
+      }
+    
+    
+  }
+  
