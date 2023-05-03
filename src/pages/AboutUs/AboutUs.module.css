@@ -1,66 +1,194 @@
+.Main {
+  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
+  /* border: 1px solid red; */
+}
 
-   .aboutUsPage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    
-    margin-top: 50px;
-  }
-  
-  .videoContainer {
-    width: 45%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    margin-bottom: 30px;
-  }
-  
-  .videoContainer:last-child {
-    margin-right: 0;
-  }
-  
-  .videoContainer iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+.AboutUs {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.listContainer li::before {
+  content: ".";
+  color: red;
+  display: inline-block;
+  width: 35px;
+  font-weight: 900;
+  font-size: 6rem;
+  margin-top: -30rem;
+}
+
+.Main {
+  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
+}
+
+.AboutUs {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rrem;
+}
+
+.ContainerHeading {
+  text-align: start;
+}
+
+.ContainerHeading > button {
+  margin-left: 39px;
+}
+
+.ContainerHeading > button {
+  margin-left: 2.5rem;
+}
+
+.Main h1 {
+  color: red;
+  font-size: 50px;
+  font-weight: 700px;
+
+  text-align: start;
+  margin-left: 45px;
+}
+
+.Main h1 {
+  color: red;
+  font-size: 3.5rem;
+  font-weight: 50rem;
+
+  text-align: start;
+  margin-left: 3rem;
+}
+.Video1 {
+  margin-right: 100px;
+}
+.Video2 {
+  margin-left: 100px;
+}
+
+.button {
+  margin-top: 20px;
+  height: 45px;
+  width: 100px;
+  background-color: red;
+  padding: 7px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.listContainer {
+  list-style: disc;
+  font-size: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+p {
+  font-size: 15px;
+  margin-left: 40px;
+}
+.strong {
+  font-size: 26px;
+}
+
+.button {
+  margin-top: 1.5rem;
+  height: 3rem;
+  width: 5.7rem;
+  background-color: red;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.listContainer {
+  list-style: disc;
+  font-size: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+@media screen and (min-width:300px) and (max-width: 844px) {
+  .Main {
+    margin: 0;
+    padding: 0;
+    display: block;
     width: 100%;
-    height: 100%;
+   
   }
-  
-  .aboutUsText {
+  .AboutUs {
+    display: block;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    margin-top: 30px;
+  
+  }
+  .listContainer {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+  }
+  .strong {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Video1 {
+    margin-left: 1.5rem;
+    width: 100%;
+  }
+  .Video1 iframe {
+    width: 100%;
+    height: 30rem;
+    margin-left: -1.4rem;
+  }
+  .Video2 {
+    display: block;
+    /* border: 1px solid red; */
+
     text-align: center;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    width: 100%;
   }
-  
-  .aboutUsText h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  .Video2 iframe {
+    width: 100%;
+    height: 30rem;
   }
-  
-  .aboutUsText p {
-    font-size: 18px;
-    margin-bottom: 20px;
+
+  p {
+    font-size: 1rem;
+    margin-left: 2.7rem;
   }
-  
-  @media (max-width: 700px) {
-    .aboutUsPage {
-      flex-direction: column;
-      padding: 20px;
-      margin-top: 50px;
-    }
-  
-    .videoContainer {
-      width: 100%;
-      padding-bottom: 56.25%;
-      margin-right: 0;
-    }
-  
-    .aboutUsText {
-      text-align: left;
-    }
+  .strong {
+    font-size: 1.7rem;
   }
-  
+  .ContainerHeading {
+    text-align: start;
+  }
+  .ContainerHeading p {
+    font-size: 0.8rem;
+    width: 80%;
+    line-height: 1.1rem;
+  }
+
+  .listContainer p {
+    width: 80%;
+    /* border: 1px solid black; */
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+  }
+  .strong {
+    width: 80%;
+    /* border: 1px solid black; */
+  }
+}

@@ -1,48 +1,76 @@
 
-import ReactPlayer from "react-player";
-import styles from "./AboutUs.module.css";
+import Styles from "./AboutUs.module.css";
 
-
-function AboutUs() {
+export default function AboutUs() {
   return (
-    <div className={styles.aboutUsPage}>
-      <div className={styles.aboutUsText}>
-        <h2>About Us</h2>
-        <p>
-          Our gym is dedicated to providing a fun and challenging workout
-          experience for people of all fitness levels. We offer a variety of
-          classes and training programs to help you achieve your health and
-          fitness goals.
-        </p>
-        <p>
-          Our Trainers are experienced professionals who are passionate about
-          helping you succeed. Whether you are just starting out or looking to
-          take your fitness ti the next level ,we are here to support and
-          motivated you every step of the way.
-        </p>
+    <div id="about" className={Styles.Main}>
+      <div className={Styles.AboutUs}>
+        <div className={Styles.Video1}>
+          <iframe
+            width="360"
+            height="515"
+            src="https://www.youtube.com/embed/f6t9TQqdUzg"
+            title="YouTube video player"
+            // frameborder="0"
+            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            // allowfullscreen={true}
+            allowFullScreen={true}
+          ></iframe>
+        </div>
+        <div className={Styles.ContainerHeading}>
+          <h1>About Us</h1>
+          <p>
+            Through our 7-day programme we offer you some useful life questions
+            to think about. We also offer you some answers on these questions
+            but we encourage you to learn more about it yourself. You can read
+            it all at once but we advise you to read and think about your life
+            for the next 7 days. It may become the most valuable week of your
+            life! It can be very valuable in your life. So take some time and
+            invest one week in your life and future!
+          </p>
+          <button className={Styles.button}>Learn More</button>
+        </div>
       </div>
-      <div className={styles.videoContainer}>
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=BvuaBsHMiOQ"
-          controls
-          width="100%"
-          height="100%"
-          volume={5}
-          // controls={false}
-        />
-      </div>
-      <div className={styles.videoContainer}>
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=ItuhDytDOYE"
-          controls
-          width="100%"
-          height="100%"
-          // controls="true"
-          volume={5}
-        />
+
+      <div className={Styles.AboutUs}>
+        <div>
+          <h1>Why Choose Us ?</h1>
+          <ul className={Styles.listContainer}>
+            <li>
+              <strong className={Styles.strong}>
+                Consultation with expert
+              </strong>
+              <p>
+                Plus Fitness franchisee Jacob Awad first started his journey
+                with the brand in 2013 after purchasing Plus Fitness Seven Hills
+                from a previous owner. In 2017 Jacob then went on to purchase
+                his second location, Plus Fitness Northmead.
+              </p>
+            </li>
+            <li>
+              <strong className={Styles.strong}> workout faculitis</strong>
+              <p>
+                Plus Fitness franchisee Jacob Awad first started his journey
+                with the brand in 2013 after purchasing Plus Fitness Seven Hills
+                from a previous owner. In 2017 Jacob then went on to purchase
+                his second location, Plus Fitness Northmead.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div className={Styles.Video2}>
+          <iframe
+            width="360"
+            height="515"
+            src="https://www.youtube.com/embed/cllK0z8BrlQ"
+            title="YouTube video player 😈"
+            // frameborder="0"
+            // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen={true}
+          ></iframe>
+        </div>
       </div>
     </div>
   );
 }
-export default AboutUs;
-// // import React from "react";
