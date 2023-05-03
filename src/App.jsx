@@ -1,9 +1,10 @@
-import AboutUs from "./pages/AboutUs/AboutUs";
-
+// import AboutUs from "./pages/AboutUs/AboutUs";
+import Pricing from "./pages/Pricing/Pricing";
 function App() {
   return (
     <div>
-      <AboutUs />
+      {/* <AboutUs /> */}
+      <Pricing />
       {/* <h1>hello</h1> */}
     </div>
   );
