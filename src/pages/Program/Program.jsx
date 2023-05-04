@@ -43,21 +43,23 @@ export default function Program () {
     return(
         <>
         <Navbar/>
-            <h1 className = {style.heading}> Trainers Program </h1>
+        <div className={style.mainDiv}>
+        <h1 className = {style.heading}> Trainers Program </h1>
 
-            <div className = {style.main}>
-            {
-                Data.map((item , index) =>{
-                    return(
-                        <div key = {item.id} className = {style.container}>
-                    <img src = {item.Img} alt='program' className = {style.img} />
-                    <p> {item.Name} </p>
-                    </div>
-                    )
-                    
-                })
-            }
-            </div>
+<div className = {style.main}>
+{
+    Data.map((item , index) =>{
+        return(
+            <div key = {item.id} className = {style.container}>
+        <img src = {item.Img} alt='program' className = {style.img} />
+        <p> {item.Name} </p>
+        </div>
+        )
+        
+    })
+}
+</div>
+        </div>
             
             <Footer/>
         </>
