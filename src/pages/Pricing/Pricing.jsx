@@ -51,11 +51,9 @@ export default function Pricing() {
           <h2>From Punch Pass to Monthly or Annual</h2>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-            aliquam odio est molestiae dolores quis maxime quae consequuntur
-            deleniti amet excepturi sequi obcaecati unde iure, culpa corporis
-            error eos iste?
-          </p>
+          At Gym base we offer wide range of membership with opposite to suit every budget.
+      Everything from one Day Pass. Punch Pass to monthly or annual prepaid membership. 
+      What's more. We won't tie you in to a long term contract giving you greater flexibility.          </p>
 
           <h3>Each Plan included</h3>
 
