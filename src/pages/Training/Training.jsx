@@ -1,7 +1,8 @@
 import { useState } from "react";
 import style from "./Training.module.css";
 import Button from "@mui/material/Button";
-
+import Navbar from "../../component/Navbar/Navbar"
+import Footer from "../../component/Footer/Footer"
 export default function Training() {
   const [show, setShow] = useState(3);
   const [buttonText, setButtonText] = useState("Show More");
@@ -76,9 +77,11 @@ export default function Training() {
   };
 
   return (
-    <div className = {style.main}>
-    <h1> Trainers </h1>
-      <h2>Meet our team </h2>
+<>
+<Navbar/>
+<div className = {style.main}>
+    <h1 className={style.h1}> Trainers </h1>
+      <h2 className = {style.h2}>Meet our team </h2>
 
       <p className={style.p}>
         We are the team experience people, nutirition, sports and fitness
@@ -86,9 +89,10 @@ export default function Training() {
         and knowledge unsurpassed in the industry.Get to know us.
       </p>
 
-      {data.slice(0, show).map((item) => {
+     <div className={style.cardbox}>
+     {data.slice(0, show).map((item) => {
         return (
-          <div key={item.id}  className={style.cardbox}>
+          <div key={item.id}>
             <div  className={style.card} >
             <img src={item.image} alt="" />
             <div className={style.content}>
@@ -99,6 +103,7 @@ export default function Training() {
           </div>
         );
       })}
+     </div>
       <br />
 
       <div
@@ -121,5 +126,7 @@ export default function Training() {
         </Button>
       </div>
     </div>
+    <Footer/>
+</>
   );
 }
