@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    height: 98vh;
+    position: relative;
+  }
+  
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2px;
+    color: whitesmoke;
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .text {
+      font-size: 2rem;
+    }
+  }
+  

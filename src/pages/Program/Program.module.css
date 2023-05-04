@@ -1,0 +1,49 @@
+
+.heading{
+    text-align : center;
+}
+
+.main{
+    display : flex;
+    overflow-x: auto;
+}
+
+.container{
+    padding : 1rem;
+    margin : 1rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0,0.2);
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+.img{
+    flex-shrink: 0;
+    width: 500px;
+    height: 600px;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+}
+
+p{
+    text-align : center;
+    font-size:1.7rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+      display: block;
+      overflow-x: hidden;
+    }
+  
+    .img {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+    }
+  
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  
+  
