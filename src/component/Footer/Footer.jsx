@@ -4,7 +4,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import style from "./Footer.module.css";
 
-export function Footer() {
+export default function Footer() {
   return (
     <div className={style.main}>
       <div className={style.head}>

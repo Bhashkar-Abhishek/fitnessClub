@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url('https://wallpaper.dog/large/20502651.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+  }
+  
+  .header {
+    margin-bottom: 32px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 60vh; */
+    /* width: 30vw; */
+    padding: 3rem ;
+    border-radius: 8px;
+    background-color:rgba(240, 240, 240, 0.8);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .error{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: red;
+    display: flex;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 0.3rem;
+  }
+  .login p{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media only screen and (max-width: 280px) {
+    html{
+        font-size: 20px;
+      }    
+  }
+
+    @media only screen and (max-width: 786px) {
+    html{
+      font-size: 20px;
+    }
+       
+    }
+    @media only screen and (max-width: 1024px) {
+      html{
+        font-size: 25px;
+      }
+    }
+ 

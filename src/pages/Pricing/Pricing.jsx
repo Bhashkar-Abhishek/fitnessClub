@@ -1,10 +1,13 @@
 
 // import { Link } from "react-router-dom";
 import styles from "./Pricing.module.css";
-
+import Navbar from "../../component/Navbar/Navbar"
+import Footer from "../../component/Footer/Footer"
 export default function Pricing() {
   return (
-    <div className={styles.pricing_mainBackground}>
+<>
+<Navbar/>
+<div className={styles.pricing_mainBackground}>
       <div className={styles.pricing_container}>
         <div className={styles.pass_part}>
           <div className={`${styles.pass_box} ${styles.left_box}`}>
@@ -77,5 +80,7 @@ export default function Pricing() {
         </div>
       </div>
     </div>
+    <Footer/>
+</>
   );
 }

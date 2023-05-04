@@ -17,4 +17,79 @@
 .linkDiv {
     display: flex;
     gap: 2rem;
+    font-size: 1.3rem;
+}
+
+
+.btn_div{
+  display: flex;
+  align-items: center;
+}
+.menuIcon{
+  display: none;
+  margin-right: 2rem;
+}
+
+.mobileLinkDiv{
+  display: none;
+  padding: 3rem;
+  background-color:rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+  margin-top: 12vh;
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  }
+.mobileLink{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  gap: .5em;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px ) {
+
+  .navDiv{
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .linkDiv{
+      display: none;
+  }
+  .btn_div{
+      display: none;
+  }
+  .logo{
+    visibility: visible;
+  }
+    .menuIcon{
+      display: flex;
+    }
+    .mobileLinkDiv{
+      display: flex;
+      }
+    .mobileLink{
+      display: flex;
+      
+    }
+    
+}
+
+@media screen and (min-width: 1024px) { 
+
+  .logo{
+      visibility: visible;
+  }
+  .mobileLinkDiv{
+    visibility: visible;
+  }
+  .mobileLink{
+    visibility: visible;
+  }
+  
 }

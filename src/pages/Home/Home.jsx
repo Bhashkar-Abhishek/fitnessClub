@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import style from './Home.module.css'
-
-export function Home() {
+import Navbar from "../../component/Navbar/Navbar"
+import Footer from "../../component/Footer/Footer"
+export default function Home() {
 
   const imgArr = [
     {
@@ -32,11 +33,15 @@ export function Home() {
   }, [index]);
 
   return (
+ <>
+ <Navbar/>
     <div className={style.main}>
         <img src={imgArr[index].url} alt={imgArr[index].text} className={style.img} />
         <div className={style.text}>
           <p>{imgArr[index].text}</p>
       </div>
     </div>
+    <Footer/>
+ </>
   )
 }

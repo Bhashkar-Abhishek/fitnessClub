@@ -1,9 +1,12 @@
 
 import Styles from "./AboutUs.module.css";
-
+import Navbar from "../../component/Navbar/Navbar"
+import Footer from "../../component/Footer/Footer"
 export default function AboutUs() {
   return (
-    <div id="about" className={Styles.Main}>
+<>
+<Navbar/>
+<div id="about" className={Styles.Main}>
       <div className={Styles.AboutUs}>
         <div className={Styles.Video1}>
           <iframe
@@ -72,5 +75,7 @@ export default function AboutUs() {
         </div>
       </div>
     </div>
+    <Footer/>
+</>
   );
 }

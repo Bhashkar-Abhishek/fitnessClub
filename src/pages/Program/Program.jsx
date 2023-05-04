@@ -1,6 +1,8 @@
 import style from './Program.module.css'
 // import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 // import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
+import Navbar from "../../component/Navbar/Navbar"
+import Footer from "../../component/Footer/Footer"
 export default function Program () {
 
     const Data = [
@@ -40,6 +42,7 @@ export default function Program () {
 
     return(
         <>
+        <Navbar/>
             <h1 className = {style.heading}> Trainers Program </h1>
 
             <div className = {style.main}>
@@ -56,7 +59,7 @@ export default function Program () {
             }
             </div>
             
-            
+            <Footer/>
         </>
     )
 }
