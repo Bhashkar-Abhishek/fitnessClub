@@ -1,201 +1,51 @@
-.Main {
-margin-top: 10vh;
-  background-color: rgb(255, 255, 255);
-  /*  background-image:url("https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"); */
-  background-size:cover;
-  /* height: 100vh; */
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
 
-
-}
-
-.AboutUs {
-  padding: 50px;
+.aboutus {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 20px;
-}
-.listContainer li::before {
-  content: ".";
-  color: red;
-  display: inline-block;
-  width: 35px;
-  font-weight: 900;
-  font-size: 6rem;
-  margin-top: -30rem;
+  margin: 7rem 3rem 3rem 3rem;
 }
 
-.Main {
-  /* height: 100vh; */
-  background-color: rgb(255, 255, 255);
+h1{
+  font-size: 4rem;
 }
 
-.AboutUs {
-  padding: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rrem;
+
+
+.p{
+  padding-top: 3vh;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1.4rem;
+  color: black;
 }
 
-.ContainerHeading {
-  text-align: start;
+.left {
+  padding-left: 3rem;
 }
 
-.ContainerHeading > button {
-  margin-left: 39px;
+
+.right {
+  padding-left: 3rem;
 }
 
-.ContainerHeading > button {
-  margin-left: 2.5rem;
-}
 
-.Main h1 {
-  color: red;
-  font-size: 50px;
-  font-weight: 700px;
-
-  text-align: start;
-  margin-left: 45px;
-}
-
-.Main h1 {
-  color: red;
-  font-size: 3.5rem;
-  font-weight: 50rem;
-
-  text-align: start;
-  margin-left: 3rem;
-}
-.Video1 {
-  margin-right: 100px;
-}
-.Video2 {
-  margin-left: 100px;
-}
-
-.button {
-  margin-top: 20px;
-  height: 45px;
-  width: 100px;
-  background-color: red;
-  padding: 7px;
+.btn {
+  background-color: #da0909;
   color: white;
-  border-radius: 10px;
   border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 9rem;
+  font-size: 1.4rem;
 }
 
-.listContainer {
-  list-style: disc;
-  font-size: 15px;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
-p {
-  font-size: 15px;
-  margin-left: 40px;
-}
-.strong {
-  font-size: 26px;
-}
 
-.button {
-  margin-top: 1.5rem;
-  height: 3rem;
-  width: 5.7rem;
-  background-color: red;
-  padding: 0.5rem;
-  color: white;
-  border-radius: 10px;
-  border: none;
-}
 
-.listContainer {
-  list-style: disc;
-  font-size: 1rem;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  text-align: start;
-}
 
-@media screen and (min-width:300px) and (max-width: 844px) {
-  .Main {
-    margin: 0;
-    padding: 0;
-    display: block;
-    width: 100%;
-   
-  }
-  .AboutUs {
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  
-  }
-  .listContainer {
-    margin: 0;
-    padding: 0;
-    /* border: 1px solid black; */
-  }
-  .strong {
-    margin: 0;
-    padding: 0;
-  }
-
-  .Video1 {
-    margin-left: 1.5rem;
-    width: 100%;
-  }
-  .Video1 iframe {
-    width: 100%;
-    height: 30rem;
-    margin-left: -1.4rem;
-  }
-  .Video2 {
-    display: block;
-    /* border: 1px solid red; */
-
-    text-align: center;
-    margin-left: 0rem;
-    margin-top: 1rem;
-    width: 100%;
-  }
-  .Video2 iframe {
-    width: 100%;
-    height: 30rem;
-  }
-
-  p {
-    font-size: 1rem;
-    margin-left: 2.7rem;
-  }
-  .strong {
-    font-size: 1.7rem;
-  }
-  .ContainerHeading {
-    text-align: start;
-  }
-  .ContainerHeading p {
-    font-size: 0.8rem;
-    width: 80%;
-    line-height: 1.1rem;
-  }
-
-  .listContainer p {
-    width: 80%;
-    /* border: 1px solid black; */
-    font-size: 0.8rem;
-    line-height: 1.1rem;
-  }
-  .strong {
-    width: 80%;
-
+@media screen and (max-width: 768px) {
+  .aboutus {
+    flex-direction: column;
   }
 }
