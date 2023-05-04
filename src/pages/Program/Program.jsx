@@ -1,7 +1,7 @@
 import style from './Program.module.css'
 // import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 // import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
-export function Program () {
+export default function Program () {
 
     const Data = [
         {
