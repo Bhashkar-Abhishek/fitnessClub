@@ -43,7 +43,7 @@ export default function Pricing() {
     ☑️ 1 Group Class Include  <br /> <br />
     ☑️ 24 Hours Access <br />
     </p>
-    <button className={Style.btns}onClick={() => {isLogedIn?alert("You have subscribed to our daily pass"):navigate('/login')}}> GET STARTED </button>
+    <button className={Style.btns}onClick={() => {isLogedIn?alert("You have subscribed to our monthly pass"):navigate('/login')}}> GET STARTED </button>
   </div>
   
 
