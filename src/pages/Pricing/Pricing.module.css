@@ -72,7 +72,7 @@
     padding-top: 20px;
     margin-bottom: 20px;
     width: 50vh;
-    height: 80vh;
+    /* height: 80vh; */
     color: rgb(224, 219, 219);
 }
 
@@ -137,7 +137,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 68vh;
-    height: 80vh;
 }
 
 .heading{
@@ -154,6 +153,7 @@
 .p2{
     margin-top: 3vh;
     margin-left: 2vh;
+    font-size: 1.5rem;
     color: rgb(223, 226, 229);
     text-align: justify;
 }

@@ -68,9 +68,6 @@ export default function Pricing() {
       </p>
       </div>
 </div>
-
-
-      {/* <Footer /> */}
     </div>
     <Footer/>
 </>
