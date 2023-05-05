@@ -127,21 +127,30 @@ const handleLogin=()=>{
             {error?<small>{errorText}</small>:null}
             </p>
 
-            <div className={style.login}>
-            <p>Don't have an account? 
-               <Link to="/registration" style={{ textDecoration: 'none' }} > SignUp </Link></p>
-          </div>
-
-          <Button
+          {/* <Button
             variant="contained"
             onClick={handleLogin}
             sx={{
-              margin: "1.5rem"
+              marginTop: "1.5rem"
             }}
           >
             Login
+          </Button> */}
+          <Button
+          variant="contained"
+          onClick={handleLogin}
+          sx={{
+            marginTop:"1.5rem"
+          }}
+          >
+            Login
           </Button>
+
          
+           <div className={style.login}>
+            <p>Don't have an account? 
+               <Link to="/registration" style={{ textDecoration: 'none' }} > SignUp </Link></p>
+          </div>
 
         </Box>
 

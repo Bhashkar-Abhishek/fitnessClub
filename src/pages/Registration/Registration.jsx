@@ -160,23 +160,22 @@ function Registration() {
           <p className={style.error}>
             {error?<small>{errorText}</small>:null}
             </p>
-            
-            <div className={style.login}>
-            <p>Don't have an account? 
-               <Link to="/login" style={{ textDecoration: 'none' }} > SignIn </Link></p>
-          </div>
-
 
           <Button
             variant="contained"
             onClick={handleSignUp}
             sx={{
-              margin: "1.5rem"
+              marginTop: "1.5rem"
             }}
           >
             SignUp
           </Button>
           
+          <div className={style.login}>
+            <p>Already have an account? 
+               <Link to="/login" style={{ textDecoration: 'none' }} > SignIn </Link></p>
+          </div>
+
 
         </Box>
       </div>

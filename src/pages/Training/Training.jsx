@@ -3,9 +3,12 @@ import style from "./Training.module.css";
 import Button from "@mui/material/Button";
 import Navbar from "../../component/Navbar/Navbar"
 import Footer from "../../component/Footer/Footer"
+import { Navigate } from "react-router-dom";
 export default function Training() {
   const [show, setShow] = useState(3);
   const [buttonText, setButtonText] = useState("Show More");
+
+  const isLogedIn=localStorage.getItem("isLogedIn")
 
   const data = [
     {
@@ -79,7 +82,9 @@ export default function Training() {
   return (
 <>
 <Navbar/>
-<div className = {style.main}>
+{
+  isLogedIn?(
+    <div className = {style.main}>
     <h1 className={style.h1}> Trainers </h1>
       <h2 className = {style.h2}>Meet our team </h2>
 
@@ -126,6 +131,9 @@ export default function Training() {
         </Button>
       </div>
     </div>
+  ):<Navigate to ="/login"/>
+}
+
     <Footer/>
 </>
   );
