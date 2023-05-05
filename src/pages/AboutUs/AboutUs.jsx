@@ -16,7 +16,6 @@ export default function AboutUs() {
             height="500"
             src="https:www.youtube.com/embed/f6t9TQqdUzg"
             title="YouTube video player"
-            allowfullscreen={true}
             allowFullScreen={true}
           >
           </iframe>
@@ -63,7 +62,7 @@ export default function AboutUs() {
             height="500"
             src="https:www.youtube.com/embed/cllK0z8BrlQ"
             title="YouTube video player 😈"
-            allowfullscreen={true}
+            allowFullScreen={true}
           >
           </iframe>
         </div>

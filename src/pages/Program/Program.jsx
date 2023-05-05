@@ -3,8 +3,9 @@ import style from './Program.module.css'
 // import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import Navbar from "../../component/Navbar/Navbar"
 import Footer from "../../component/Footer/Footer"
+import { Navigate } from 'react-router-dom';
 export default function Program () {
-
+const isLogedIn=localStorage.getItem("isLogedIn")
     const Data = [
         {
           id: 1,
@@ -43,24 +44,28 @@ export default function Program () {
     return(
         <>
         <Navbar/>
-        <div className={style.mainDiv}>
-        <h1 className = {style.heading}> Trainers Program </h1>
-
-<div className = {style.main}>
-{
-    Data.map((item , index) =>{
-        return(
-            <div key = {item.id} className = {style.container}>
-        <img src = {item.Img} alt='program' className = {style.img} />
-        <p> {item.Name} </p>
-        </div>
-        )
-        
-    })
-}
-</div>
-        </div>
-            
+       {
+        isLogedIn?(
+          <div className={style.mainDiv}>
+          <h1 className = {style.heading}> Trainers Program </h1>
+  
+  <div className = {style.main}>
+  {
+      Data.map((item , index) =>{
+          return(
+              <div key = {item.id} className = {style.container}>
+          <img src = {item.Img} alt='program' className = {style.img} />
+          <p> {item.Name} </p>
+          </div>
+          )
+          
+      })
+  }
+  </div>
+          </div>
+              
+        ):<Navigate to ="/login"/>
+       }
             <Footer/>
         </>
     )
