@@ -20,7 +20,6 @@ function App() {
         <Route path='/program' element={<Program />} />
         <Route path='/login' element={<Login />} />
         <Route path='/registration' element={<Registration />} />
-        <Route path='/subscription' element={<Subscription />} />
         <Route path='/pricing' element={<Pricing />} />
         <Route path='/*' element={"Error 404 Page not found"} />
       </Routes>
