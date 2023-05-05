@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react'
 import style from './Home.module.css'
 import Navbar from "../../component/Navbar/Navbar"
 import Footer from "../../component/Footer/Footer"
+import { Button } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 export default function Home() {
+
+  const navigate = useNavigate()
 
   const imgArr = [
     {
@@ -39,8 +43,28 @@ export default function Home() {
         <img src={imgArr[index].url} alt={imgArr[index].text} className={style.img} />
         <div className={style.text}>
           <p>{imgArr[index].text}</p>
+          
       </div>
+      
     </div>
+    <div>
+       <p className={style.p}>
+       "<span style={{color : 'red' , fontSize :'4rem'}}>Take </span> 
+        care of your body  <br /> 
+       It's the only place you 
+        <span style={{color : 'red' , fontSize :'4rem'}}> live</span>."</p>
+        <Button
+            variant="contained"
+            onClick={() => navigate('/registration')}
+            sx={{position : 'absolute' ,
+            bottom : '23%' ,
+            marginLeft : '10rem' ,
+            fontSize : '1.5rem' ,
+            transform:'transletX(-50%'}}
+          >
+            Join with Us
+          </Button>
+      </div>
     <Footer/>
  </>
   )

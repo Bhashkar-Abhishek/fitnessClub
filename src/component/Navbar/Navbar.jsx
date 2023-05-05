@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link to='/program' style={{ textDecoration: 'none' }}  >Program</Link>
           <Link to='/training' style={{ textDecoration: 'none' }} >Training</Link>
           <Link to='/pricing' style={{ textDecoration: 'none' }} >Pricing</Link>
-          <Link to='/registration' style={{ textDecoration: 'none' }} >Registration</Link>
+         
         
       </div>
 
