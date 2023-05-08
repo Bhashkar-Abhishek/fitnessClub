@@ -37,35 +37,45 @@ export default function Home() {
   }, [index]);
 
   return (
- <>
- <Navbar/>
-    <div className={style.main}>
-        <img src={imgArr[index].url} alt={imgArr[index].text} className={style.img} />
+    <>
+      <Navbar />
+      <div className={style.main}>
+        <img
+          src={imgArr[index].url}
+          alt={imgArr[index].text}
+          className={style.img}
+        />
         <div className={style.text}>
           <p>{imgArr[index].text}</p>
-          
+        </div>
       </div>
-      
-    </div>
-    <div>
-       <p className={style.p}>
-       "<span style={{color : 'red' , fontSize :'4rem'}}>Take </span> 
-        care of your body  <br /> 
-       It's the only place you 
-        <span style={{color : 'red' , fontSize :'4rem'}}> live</span>."</p>
+      <div>
+        <p className={style.p}>
+          "<span style={{ color: "red", fontSize: "4rem" }}>Take </span>
+          care of your body <br />
+          It's the only place you
+          <span style={{ color: "red", fontSize: "4rem" }}> live</span>."
+        </p>
+        {/* <br />
+        <br />
+        <br />
+        <br /> */}
         <Button
-            variant="contained"
-            onClick={() => navigate('/registration')}
-            sx={{position : 'absolute' ,
-            bottom : '23%' ,
-            marginLeft : '10rem' ,
-            fontSize : '1.5rem' ,
-            transform:'transletX(-50%'}}
-          >
-            Join with Us
-          </Button>
+          variant="contained"
+          onClick={() => navigate("/registration")}
+          sx={{
+            position: "absolute",
+            bottom: "23%",
+            marginLeft: "10rem",
+            fontSize: "1.5rem",
+            transform: "transletX(-50%",
+            marginTop:"10rem",
+          }}
+        >
+          Join with Us
+        </Button>
       </div>
-    <Footer/>
- </>
-  )
+      <Footer />
+    </>
+  );
 }

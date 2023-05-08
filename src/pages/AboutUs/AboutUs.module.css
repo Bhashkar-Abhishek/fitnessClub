@@ -1,17 +1,18 @@
 
+
+
 .aboutus {
   display: flex;
+  flex-direction: row;
   align-items: center;
   margin: 7rem 3rem 3rem 3rem;
 }
 
-h1{
+h1 {
   font-size: 4rem;
 }
 
-
-
-.p{
+.p {
   padding-top: 3vh;
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,11 +25,9 @@ h1{
   padding-left: 3rem;
 }
 
-
 .right {
   padding-left: 3rem;
 }
-
 
 .btn {
   background-color: #da0909;
@@ -41,11 +40,47 @@ h1{
   font-size: 1.4rem;
 }
 
-
-
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .aboutus {
     flex-direction: column;
+    margin: 5rem 3rem 3rem 3rem;
+  }
+
+  .left,
+  .right {
+    padding: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    width: 7rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutus {
+    margin: 3rem 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 6rem;
+    font-size: 1rem;
   }
 }
